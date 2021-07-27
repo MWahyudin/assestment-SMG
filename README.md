@@ -1,3 +1,20 @@
-## About this Repo
+# copy the .env.example file to .env
+$ cp .env.example .env
 
-A kickstater - fresh installation of Laravel 8 VueRouter with Vuejs 3 and Tailwindcss for your next project.
+# Generate the application key
+$ php artisan key:generate
+
+# Install the PHP dependencies
+$ composer install
+
+# Install node modules
+$ npm install --legacy-peer-deps
+
+# Compile the js and sass code
+$ npm run dev
+
+# Migrate the application
+$ php artisan migrate
+
+# Create the symbolic link
+$ php artisan storage:link
